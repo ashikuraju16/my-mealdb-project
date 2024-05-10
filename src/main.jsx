@@ -10,6 +10,8 @@ import Contact from "./Components/Contact/Contact.jsx";
 import About from "./Components/About/About.jsx";
 import Layout from "./Components/Layout/Layout.jsx";
 import Home from "./Components/Home/Home.jsx";
+import Recipe from "./Components/Recipe/Recipe.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,9 +23,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/items",
-        loader: () => fetch("https://www.themealdb.com/api/json/v1/1/search.php?s="),
+        loader: () =>
+          fetch("https://www.themealdb.com/api/json/v1/1/search.php?s="),
         element: <Items />,
       },
+
       {
         path: "/customers",
         element: <Customers />,
@@ -35,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/recipe",
+        element: <Recipe />,
       },
     ],
   },

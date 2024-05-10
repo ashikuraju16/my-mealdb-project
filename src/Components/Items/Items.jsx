@@ -4,7 +4,7 @@ import Meal from "../Meal/Meal";
 
 const Items = () => {
   const {meals} = useLoaderData();
- console.log(meals);
+
   return (
     <div>
       <h2 className="text-5xl font-bold w-5/6 mx-auto text-center my-4 text-white">items: {meals.length}</h2>
@@ -13,8 +13,15 @@ const Items = () => {
             meals.map(meal => <Meal key={meal.idMeal} meal={meal} />)
         }
       </div>
-      
+      <div>
+        {
+         
+
+
+        }
+      </div>
     </div>
+    
   );
 };
 
