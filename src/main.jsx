@@ -8,7 +8,7 @@ import Home from "./Components/Home/Home.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: <Home />,
     children: [{}],
   },
 ]);
