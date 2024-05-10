@@ -4,10 +4,12 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className="  bg-slate-900 p-6">
-            <nav>
-                <ul className="text-3xl  text-center space-x-10 font-extrabold ">
-                    <NavLink  className={({ isActive, isPending }) =>
+        <div className="  bg-slate-900 p-12  ">
+         
+            <nav >
+            <h1 className="text-5xl font-bold ">Welcome to <span className="text-cyan-400 text-7xl hover:text-blue-800">The MealDB</span></h1>
+                <ul  className="text-3xl  text-end space-x-10 font-extrabold">
+                    <NavLink   className={({ isActive, isPending }) =>
                       isActive
                         ? "underline bg-fuchsia-500 p-2 rounded-br-3xl rounded-tl-3xl text-white"
                         : isPending
