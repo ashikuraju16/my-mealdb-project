@@ -3,18 +3,39 @@ import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import Home from "./Components/Home/Home.jsx";
 
+import Items from "./Components/Items/Items.jsx";
+import Customers from "./Components/Customers/Customers.jsx";
+import Contact from "./Components/Contact/Contact.jsx";
+import About from "./Components/About/About.jsx";
+import Layout from "./Components/Layout/Layout.jsx";
+import Home from "./Components/Home/Home.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Layout />,
     children: [
       {
-        path: "/",
-
-    }
-  ],
+        path: "/home",
+        element: <Home />,
+      },
+      {
+        path: "/items",
+        element: <Items />,
+      },
+      {
+        path: "/customers",
+        element: <Customers />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+    ],
   },
 ]);
 
