@@ -14,7 +14,7 @@ const Meal = ({ meal }) => {
             src={strMealThumb}
             alt=""
           />
-          <Link className="text-2xl font-bold text-white group-hover:text-cyan-400 hover:bg-fuchsia-700 rounded-tl-full rounded-br-full p-4 " to="/recipe">Ingredients</Link>
+         
         </p>
 
         <h3 className="text-5xl mt-12 font-extrabold text-white">{strMeal}</h3>

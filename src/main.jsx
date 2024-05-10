@@ -27,11 +27,6 @@ const router = createBrowserRouter([
           fetch("https://www.themealdb.com/api/json/v1/1/search.php?s="),
         element: <Items />,
       },
-
-      {
-        path: "/customers",
-        element: <Customers />,
-      },
       {
         path: "/contact",
         element: <Contact />,
