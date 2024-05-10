@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </nav>
         <aside>
-          <p className="text-3xl text-white font-bold hover:bg-fuchsia-700 p-4 rounded-tr-full rounded-bl-full"><a href=" https://www.fiverr.com/ashik_raju?up_rollout=true">AshikuR Rahman</a></p>
+          <p className=" text-white font-bold hover:bg-fuchsia-700 p-4 rounded-tr-full rounded-bl-full mb-12 transition-all duration-1000 hover:scale-125"><a href=" https://www.fiverr.com/ashik_raju?up_rollout=true">AshikuR Rahman</a></p>
         </aside>
       </footer>
     </div>
